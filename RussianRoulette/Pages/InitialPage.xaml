@@ -1,0 +1,22 @@
+﻿<Page x:Class="RussianRoulette.Pages.InitialPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"
+      Title="StartUpPage" Height="579" Width="733.5">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush>#573500</SolidColorBrush>
+        </Grid.Background>
+
+        <Label Content="Win" HorizontalAlignment="Left" Margin="210,56,0,0" VerticalAlignment="Top" Height="60" Width="130" Foreground="#FFA1FB04" FontSize="48" FontFamily="Cooper Black" FontWeight="Bold"/>
+        <Label Content="Lose" HorizontalAlignment="Left" Margin="210,122,0,0" VerticalAlignment="Top" Height="60" Width="130" Foreground="#FFFB043C" Background="#573500" FontSize="48" FontFamily="Cooper Black" FontWeight="Bold"/>
+        <TextBox x:Name = "WinScore" HorizontalAlignment="Left" Margin="386,56,0,0" TextWrapping="Wrap" Text="10" TextAlignment="Center" VerticalAlignment="Top" Height="60" Width="110" Foreground="Green" Background="#573500" FontSize="48" FontFamily="Cooper Black" FontWeight="Bold"/>
+        <TextBox x:Name = "LoseScore" HorizontalAlignment="Left" Margin="386,122,0,0" TextWrapping="Wrap" Text="10" TextAlignment="Center" VerticalAlignment="Top" Height="60" Width="110" Foreground="DarkRed" Background="#573500" FontSize="48" FontFamily="Cooper Black" FontWeight="Bold"/>
+        <Button x:Name="SpinButton" Content="Spin" HorizontalAlignment="Left" Margin="268,276,0,0" VerticalAlignment="Top" Width="200" Height="56" Background="#eb8f00" Foreground="Black" FontSize="30" FontFamily="BankGothic Md BT" FontWeight="Bold" Click="SpinButton_Click"/>
+        <Button x:Name="LoadButton" Content="Load" HorizontalAlignment="Right" Margin="0,215,266,0" VerticalAlignment="Top" Width="200" Height="56" Background="#eb8f00" Foreground="Black" FontSize="30" FontFamily="BankGothic Md BT" FontWeight="Bold" Click="LoadButton_Click"/>
+        <Button x:Name="StartButton"  Content="Start" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="299" Height="105" Background="#eb8f00" Foreground="Black" FontSize="30" FontFamily="BankGothic Md BT" FontWeight="Bold" Margin="224,0,211,88" Click="StartButton_Click"/>
+    </Grid>
+</Page>

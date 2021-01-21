@@ -1,0 +1,34 @@
+﻿<Page x:Class="RussianRoulette.Pages.GamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RussianRoulette.Pages"
+      mc:Ignorable="d"
+      Title="Game Page" Height="625.5" Width="862.5">
+
+    <Grid Margin="0,0,10,10">
+        <Grid.Background>#573500</Grid.Background>
+        <Rectangle x:Name="FireInAirImg" HorizontalAlignment="Left" Height="425" Margin="55,175,0,0" Stroke="#eb8f00" VerticalAlignment="Top" Width="748">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/RussianRoulette;component/Resources/img/shot.jpg" Stretch="UniformToFill">
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <RadioButton x:Name="AirShoot" Margin="602,36,186,557" FontFamily="Cooper Black" Click="AirShoot_Click" Foreground="#eb8f00" Background="#573500">Airshot</RadioButton>
+        <RadioButton x:Name="HeadShoot" Margin="602,10,130,585" FontFamily="Cooper Black" IsChecked="True" Click="HeadShoot_Click" Foreground="#eb8f00" Background="#573500">Headshot</RadioButton>
+        <Label Content="Chances" HorizontalAlignment="Left" Margin="86,30,0,0" VerticalAlignment="Top" Foreground="#FFA1FB04" FontSize="33" FontFamily="Cooper Black" FontWeight="Bold"/>
+        <TextBox x:Name = "AwayShots" HorizontalAlignment="Left" Margin="239,28,0,0" TextWrapping="Wrap" Text="2" TextAlignment="Center" VerticalAlignment="Top" Height="50" Width="61" Foreground="Green" Background="#573500" FontSize="40" FontFamily="BankGothic Md BT" FontWeight="Bold"/>
+        <Label Content="Remaining Bullets" HorizontalAlignment="Left" Margin="86,86,0,0" VerticalAlignment="Top" Foreground="#FFFB4704" FontSize="33" FontFamily="Cooper Black" FontWeight="Bold"/>
+        <TextBox x:Name = "ShotsRemaining" HorizontalAlignment="Left" Margin="411,83,0,0" TextWrapping="Wrap" Text="6" TextAlignment="Center" VerticalAlignment="Top" Height="50" Width="71" Foreground="DarkRed" Background="#573500" FontSize="40" FontFamily="BankGothic Md BT" FontWeight="Bold"/>
+        <Button x:Name="FireButton"  Content="Fire" HorizontalAlignment="Center" VerticalAlignment="Center" Width="201" Height="85" Background="#FFAC5555" Foreground="Black" FontSize="45" FontFamily="BankGothic Md BT" FontWeight="Bold" Margin="602,64,49,467" Click="FireButton_Click"/>
+    </Grid>
+</Page>
